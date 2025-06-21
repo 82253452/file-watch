@@ -1,0 +1,8 @@
+{
+  "name": "rustExtension",
+  "version": "1.0.0",
+  "mode": "release",
+  "author": "Your Name",
+  "binaryName": "neutralino_extension",
+  "permissions": []
+}

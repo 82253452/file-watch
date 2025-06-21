@@ -1,0 +1,54 @@
+{
+  "applicationId": "js.neutralino.zero",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "documentRoot": "/react-vite/build/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "enableExtensions": true,
+  "nativeAllowList": [
+    "app.*",
+    "os.*",
+    "storage.*",
+    "filesystem.*",
+    "computer.*",
+    "window.*",
+    "extensions.*",
+    "debug.log"
+  ],
+  "modes": {
+    "window": {
+      "title": "定时程序",
+      "width": 2200,
+      "height": 1800,
+      "enableInspector": false,
+      "icon": "/resources/app.ico",
+      "winIcon": "/resources/app.ico",
+      "center": true
+    }
+  },
+  "applicationIcon": "./react-vite/public/time.png",
+  "cli": {
+    "binaryName": "neu",
+    "extensionsPath": "/extensions/",
+    "resourcesPath": "/react-vite/build/",
+    "frontendLibrary": {
+      "patchFile": "/react-vite/public/index.html",
+      "devUrl": "http://localhost:5173",
+      "projectPath": "/react-vite/",
+      "initCommand": "bun i",
+      "devCommand": "bun run dev",
+      "buildCommand": "bun run build",
+      "waitTimeout": 20000
+    },
+    "binaryVersion": "nightly"
+  },
+  "extensions": [
+    {
+      "id": "rs.extension",
+      "command": "${NL_PATH}/extensions/rust_extension/neutralino_extension.exe",
+      "commandLinux": "${NL_PATH}/extensions/rust_extension/neutralino_extension"
+    }
+  ]
+}

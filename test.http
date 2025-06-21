@@ -1,0 +1,5 @@
+### GET request to example server
+POST http://116.198.229.234:5101/?query_id=2ee44645-94c7-4a4f-8e9d-29943a660d3d&database=biss&query=INSERT+INTO+file_contents+FORMAT+JSONEachRow
+Authorization: Basic cm9vdDptZ2Nyb290MTIz
+
+{"file_name":"新建 文本文档 - 副本 (10) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.txt","file_path":"E:/新建文件夹/新建 文本文档 - 副本 (10) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.txt","file_size":0,"content":"","last_modified":1750396334000,"extension":"txt"}
