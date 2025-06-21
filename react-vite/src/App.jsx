@@ -4,9 +4,9 @@ import './App.css';
 import {createClient} from "@clickhouse/client-web";
 
 const clickhouseClient = createClient({
-    url: 'http://116.198.229.234:5101/',
+    url: 'http://localhost:5101/',
     username: 'root',
-    password: 'mgcroot123',
+    password: 'root',
     database:'biss'
 });
 
